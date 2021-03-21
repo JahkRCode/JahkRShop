@@ -7,7 +7,6 @@ from selenium.common.exceptions import ElementNotInteractableException, NoSuchEl
 from random import randint, randrange
 import time 
 import random
-from myInfo import myInfo
 
 AMAZON_URL = 'https://www.amazon.com/PlayStation-5-Console/dp/B08FC5L3RG/ref=sr_1_1?dchild=1&keywords=playstation+5&qid=1605750925&rnid=2941120011&s=videogames&sr=1-1'
 AMAZON_TEST_URL = 'https://www.amazon.com/PlayStation-Console-Remastered-Bundle-Renewed-4/dp/B08DP5P4SY/ref=sr_1_1?dchild=1&keywords=playstation+4&qid=1605758562&s=videogames&sr=1-1'
@@ -94,7 +93,7 @@ class JahkRShop:
         
 
 if __name__ == '__main__':
-    shopBot = JahkRShop(username=myInfo.username(), password=myInfo.password())
+    shopBot = JahkRShop(username="YOUR_USERNAME", password="YOUR_PASSWORD")
     shopBot.findProduct()
     shopBot.closeBrowser()
             
